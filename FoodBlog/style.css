@@ -21,8 +21,8 @@ html{
 .section-1{
     width: 100%;
     height: 100vh;
-    background-color:  #9ea59b;
-    color: #f0a04b;
+    background-color:  #5bccf6;
+    color: #fcde67;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ html{
 /*Section-2*/
 .section-2{
     background:#fefbe9;
-    color:#f6c453;
+    color:#5bccf6;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -115,7 +115,7 @@ html{
     height: 15vw;
     object-fit:cover;
     border-radius: 4rem;
-    box-shadow: 0.3rem 0.3rem 0.1rem #5bccf6 ,0.5rem 0.5rem 0.1rem #27718b;
+    box-shadow: 0.5rem 0.5rem 0.1rem #5bccf6 ;
 }
 .menu{
     display: flex;
@@ -206,6 +206,12 @@ transition: all 0.5s duration timing-function delay;
     visibility: visible;
     transition: opacity 1s 1s;
 }
+.menu-link:hover .price{
+   
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
 .menu-link:hover img{
    filter:blur(0.5rem);
     opacity: 0.3;
@@ -213,4 +219,12 @@ transition: all 0.5s duration timing-function delay;
     -webkit-transition: transform 0.5s duration timing-function delay;
     -moz-transition: transform 0.5s duration timing-function delay;
     transition: transform 0.5s duration timing-function delay;
+}
+/*Section-4*/
+
+.section-4{
+ background-color: #5bccf6;
+ color: #fcde67;
+ height: 70vh;
+ width: 100%;   
 }
