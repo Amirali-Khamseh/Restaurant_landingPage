@@ -36,3 +36,10 @@ const map = L.map('map').setView([0, 0], 13);
 	}
 
 	map.on('click', onMapClick);
+
+//Navbar toggeling
+	document.querySelector('.menu2').addEventListener('click',()=>{
+		document.querySelectorAll('.target').forEach((item)=>{
+				item.classList.toggle('change1');
+		})
+	});
