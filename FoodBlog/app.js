@@ -43,3 +43,39 @@ const map = L.map('map').setView([0, 0], 13);
 				item.classList.toggle('change1');
 		})
 	});
+
+	//changing the color of the nav bar handler based on the scroll of the user and as far as its in the section 3
+window.addEventListener('scroll',(e)=>{
+
+	var scroll = window.pageYOffset;
+	if (scroll < 300) {
+	
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#fcde67';
+	} else if (scroll >= 300 && scroll < 600) {
+
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#5bccf6';
+	} else if (scroll >= 600 && scroll < 1200) {
+		
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#5bccf6';
+		 
+	} else if (scroll >= 1200 && scroll < 1800) {
+	
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#fcde67';
+	} else if (scroll >= 1800 && scroll < 3000) {
+		
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#5bccf6';
+	} else {
+	
+		document.querySelector('.menu2').style.backgroundColor
+		 = '#5bccf6';
+	}
+	
+	});
+
+
+	

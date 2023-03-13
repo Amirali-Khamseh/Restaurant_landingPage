@@ -117,7 +117,7 @@ html{
 }
 .card-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     
 }
 .card img{
@@ -342,4 +342,345 @@ textarea{
 }
 #map{
     border-radius:4rem 
+}
+
+#copy-right{
+    text-align: center;
+    background: #fcde67;
+    color:#5bccf6;
+}
+/*Making it responsive */
+@media (max-width:1400px) {
+    html{
+        font-size: 50%;
+    }
+    .section1-icons i{
+        font-size: 15rem;
+        color:#f3f7f6; 
+        position: absolute;
+        transform: translate(-50%,-50%) scale(0);
+        transition: transform 0.3s ease;
+        transition-delay: 250ms;
+    }
+    .card:hover{
+        box-shadow: 2rem 2rem 5rem #416a59 ;
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+      
+    .menu2{
+        width: 3rem;
+        height: 4rem;
+        background: #fcde67;
+        position: fixed;
+        top: 1rem;
+      /*  top: 15rem;*/
+        left: 5rem;
+        border-radius: 30rem 30rem 15rem 15rem;
+        transition:  top 0.5s;
+        z-index: 1000;
+        
+    }
+    .menu2{
+        width: 2rem;
+        height: 3rem;
+        background: #fcde67;
+        position: fixed;
+        top: 4rem;
+      /*  top: 15rem;*/
+        left: 5rem;
+        border-radius: 30rem 30rem 15rem 15rem;
+        transition:  top 0.5s;
+        z-index: 1000;
+        
+    }
+    
+}
+@media (max-width:1000px) {
+   
+    html{
+        font-size: 50%;
+    }
+    .section1-icons i{
+        font-size: 10rem;
+        color:#f3f7f6; 
+        position: absolute;
+        transform: translate(-50%,-50%) scale(0);
+        transition: transform 0.3s ease;
+        transition-delay: 250ms;
+    }
+    .menu2.change1{
+        top: 12rem;
+    }
+    .navbar{
+        width: 100%;
+        height: 10rem;
+        background: #fcde67;
+      
+        position: fixed;
+    
+        /*top: 0;*/
+        top: -14rem;
+        z-index: 100;
+        transition: top 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.4 0.4 0.2 #947c25;
+        gap:4rem;
+        font-size: 2.5rem;
+      
+    }
+   
+    .menu2{
+        width: 2rem;
+        height: 3rem;
+        background: #fcde67;
+        position: fixed;
+        top: 3rem;
+      /*  top: 15rem;*/
+        left: 5rem;
+        border-radius: 30rem 30rem 15rem 15rem;
+        transition:  top 0.5s;
+        z-index: 1000;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5;
+        border: 4px solid  #a9c25d;
+        border-radius: 4rem;
+        width: 25rem;
+        height: 35rem;
+        padding: 3rem;
+        background:#f5eec2; 
+        gap: 2rem;
+        letter-spacing: 1rem;
+        position: relative;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 2rem
+    }
+    .card:hover{
+        box-shadow: 2rem 2rem 5rem #416a59 ;
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+    .section-2{
+        background:#fefbe9;
+        color:#5bccf6;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        
+    }
+    #map{
+        border-radius:4rem;
+        width: 50%; 
+        height: 20rem !important;
+        margin: 2rem;
+    }
+    .contanct-form{
+        width: 60rem;
+        height: 15rem;
+    
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+    input::placeholder {
+        font-size: 1.5rem
+    }
+}
+
+@media(max-width:500px){
+      
+  .menu2{
+      z-index: 10000;
+  }
+  
+    .section-heading{
+        font-size: 3rem;
+    }
+    .section-1{
+        height: 40vh;
+    }
+    .section1-icons i{
+        font-size: 5rem;
+        color:#f3f7f6; 
+        position: absolute;
+        transform: translate(-50%,-50%) scale(0);
+        transition: transform 0.3s ease;
+        transition-delay: 250ms;
+    }
+    .section-2{
+        background:#fefbe9;
+        color:#5bccf6;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+      
+        
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 2rem
+    }
+    .card{
+        margin: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5;
+        border: 4px solid  #a9c25d;
+        border-radius: 4rem;
+        width:30rem;
+        height: auto;
+        padding: 2rem;
+        background:#f5eec2; 
+        letter-spacing: 1rem;
+        position: relative;
+    }
+    .card h3{
+        font-size: 1.6rem;
+    }
+    .card button{
+        font-size: 1.3rem;
+        width: 100%;
+        background:  #73a24e;
+        color: #f5eec2;
+        border-radius: 4rem;
+        cursor:pointer;
+        border: none;
+    }
+    .card:hover{
+        box-shadow: 2rem 2rem 5rem #416a59 ;
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+    /*Section 3*/
+    .section-3{
+        height: auto;
+    }
+    .menu-link img{
+        width: 25rem;
+        height: 10rem;
+        object-fit:cover;
+        border-radius: 4rem;
+        box-shadow: 0.5rem 0.5rem 0.1rem #5bccf6 ;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .menu-link{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 2rem ;
+    color: #5bccf6;
+    position: relative;
+    -webkit-transition: all 0.5s duration timing-function delay;
+    -moz-transition: all 0.5s duration timing-function delay;
+    transition: all 0.5s duration timing-function delay;
+    }
+    .menu-link h3{
+        font-size: 2rem;
+    }
+    
+    .menu-link:hover{
+        transform: scale(1.1);
+    }
+  
+    /*Section-4*/
+
+.section-4{
+    background-color: #5bccf6;
+    color: #fcde67;
+    height: auto;
+    width: 100%;   
+   }
+   
+   .contanct-form{
+       width: 80rem;
+       height: 25rem;
+   
+       font-size: 3.5rem;
+       padding: 0.5rem 1rem;
+   }
+   .contanct-form input{
+       background:#fcde67 ;
+       border: none;
+       font-size: 1rem;
+       padding: 0.5rem;
+       width: 33%;
+       border-radius: 4rem;
+   }
+   .footer-wrapper{
+       display: flex;
+    flex-direction: column;
+   }
+   .name-famil{
+       display: flex;
+       flex-direction: column;
+   }
+   textarea{
+       background:#fcde67 ;
+       border-radius: 4rem;
+       padding: 0.5rem 2rem;
+       border: none;
+       width: 50%;
+       height: 4rem;
+       resize: none;
+   }
+   .contanct-form-wrapper{
+       display: flex;
+       flex-direction: column;
+     
+       
+       gap: 0.5rem;
+   }
+   #email{
+       margin:0.2rem auto ;
+       
+       width: 100%;
+   }
+   .btn-submit{
+       width: 33%;
+       height: 1.5rem;
+       border-radius: 4rem;
+       border: none;
+       background:#5bf665 ;
+       color:#ffffff;
+       font-weight:bold;
+       font-size: 1rem;
+
+       transform: translateX(-25rem);
+   }
+   #map{
+       border-radius:4rem;
+       width:80% !important;
+   }
 }
