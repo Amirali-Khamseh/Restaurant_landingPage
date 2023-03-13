@@ -683,4 +683,55 @@ textarea{
        border-radius:4rem;
        width:80% !important;
    }
+   .menu-link:hover .food-name{
+    width: 100%;
+    transition: width 1s 0.5S; 
 }
+.menu-link:hover .food-description{
+   
+    opacity: 0;
+    visibility: visible;
+    transition: opacity 1s 0.5s;
+}
+.menu-link:hover .price{
+   
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+.menu-link:hover img{
+   filter:blur(0.5rem);
+    opacity: 0.3;
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s duration timing-function delay;
+    -moz-transition: transform 0.5s duration timing-function delay;
+    transition: transform 0.5s duration timing-function delay;
+}
+.menu-link::after{
+    content: "";
+    position:absolute;
+  /*  width: 60%;*/
+  transition: width 0.5s ;
+  width: 0;
+    top: 30%;
+    right:0rem;
+    height: 0.2rem;
+    background:#5bccf6; 
+}
+.menu-link:hover::before{
+    height: 80%;
+}
+.menu-link:hover::after{
+    width: 100%;
+    z-index: 1;
+ 
+}
+.food-name{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 0;
+    overflow: hidden;
+
+}
+ }
