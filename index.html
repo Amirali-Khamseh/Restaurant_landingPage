@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="app.js" defer></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar target">
+        <a href="" class="navbar-link">
+            <i class="fas fa-home">
+                <span>
+                    Home
+                </span>
+            </i>
+        </a>
+        <a href="#menu" class="navbar-link">
+            <i class="fas fa-utensils">
+                <span>
+                    Menu
+                </span>
+            </i>
+        </a>
+        <a href="#contact-us" class="navbar-link">
+            <i class="fa fa-address-book">
+                <span>
+                    Contac-Us
+                </span>
+            </i>
+        </a>
+       
+    </nav>
+    <div class="menu2 target">
+
+    </div>
+    <!--Section one -->
+    <div class="container">
+        <section class="section-1">
+            <h1 class="section-heading">Yummy Foods Here 😋</h1>
+            <div class="section1-icons">
+
+
+                <i class="fas fa-cheese change"></i>
+                <i class="fas fa-hotdog"></i>
+                <i class="fas fa-drumstick-bite"></i>
+                <i class="fas fa-apple-alt"></i>
+                <i class="fas fa-cookie"></i>
+                <i class="fas fa-seedling"></i>
+            </div>
+        </section>
+        <!--Section two -->
+        <section class="section-2">
+            <h2 class="section-heading">Popular items</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/burger.jpg" alt="burger photo" class="card-img">
+                    <h3 class="card-name">Burger</h3>
+                    <button class="card-btn">Order now</button>
+                </div>
+                <div class="card">
+                    <img src="images/pasta.jpg" alt="pasta photo" class="card-img">
+                    <h3 class="card-name">Pasta</h3>
+                    <button class="card-btn">Order now</button>
+                </div>
+                <div class="card">
+                    <img src="images/pizza.jpg" alt="pizza photo" class="card-img">
+                    <h3 class="card-name">Burger</h3>
+                    <button class="card-btn">Order now</button>
+                </div>
+            </div>
+
+        </section>
+        <!--Section three -->
+        <section class="section-3" id="menu">
+            <h2 class="section-heading">Menu</h2>
+            <div class="menu">
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/burger.jpg" alt="burger photo">
+                    <h3 class="food-name">Burger</h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit incidunt
+                        voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium nulla molestias numquam
+                        soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+                </a>
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/BBQ.jpg" alt="BBQ ribs photo">
+                    <h3 class="food-name">BBQ"Ribs" </h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit incidunt
+                        voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium nulla molestias numquam
+                        soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+                </a>
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/pizza.jpg" alt="pizza photo">
+                    <h3 class="food-name">Pizza</h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit incidunt
+                        voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium nulla molestias numquam
+                        soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+
+                </a>
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/salad.jpg" alt="salad photo">
+                    <h3 class="food-name">Salad</h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Velit incidunt voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium
+                        nulla molestias numquam soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+                </a>
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/pasta.jpg" alt="pasta photo">
+                    <h3 class="food-name">Pasta</h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit incidunt
+                        voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium nulla molestias numquam
+                        soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+                </a>
+                <a href="#" class="menu-link" title="Order Now">
+                    <img src="images/wings.jpg" alt="wings photo">
+                    <h3 class="food-name">Wings</h3>
+                    <p class="food-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit incidunt
+                        voluptas reprehenderit, eligendi ut illo iste placeat nobis praesentium nulla molestias numquam
+                        soluta, expedita alias!</p>
+                    <span class="price">$$$</span>
+                </a>
+            </div>
+        </section>
+        <!--Section 4(Footer)-->
+        <section class="section-4" id="contact-us">
+            <footer class="footer">
+                <h2 class="section-heading">Contact us</h2>
+                <div class="footer-wrapper">
+                    <div id="map" style="width: 40rem; height: 25rem;"></div>
+                    <div class="contanct-form">
+                        <form action="" class="contanct-form-wrapper">
+                           <div class="name-famil">
+                            <label for="">Name : <input type="text" id="name" name="first-name" placeholder="John"></label>
+                            <label for="">Last-name : <input type="text" id="last-name" name="last-name" placeholder="Smith"></label>
+                           </div>
+                            <label for="" id="email">Email : <input type="email"  name="email" placeholder="example@email.com"></label>
+                           <textarea name="textarea-form" id="" cols="30" rows="5" placeholder="Your text goes here ..." ></textarea>
+                           <button class="btn-submit">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </footer>
+          
+        </section>
+        <p id="copy-right">&copy; 2023 Amirali khamseh</p>
+    </div>
+</body>
+
+</html>
